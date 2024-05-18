@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <script src="pagina1.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Chakra+Petch:wght@300&family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>AstroWeb</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-sm bg-light">
+
+        <div class="container-fluid">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagina1.html">Oroscopo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagina2.html">Pianeti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagina3.html">APOD</a>
+            </li>
+          </ul>
+        </div>
+      
+      </nav>
+
+    <div class="background"></div>
+
+    <form id="search-form">
+        <label for="search" class="textricerca">Cerca un segno zodiacale: </label>
+        <input type="text" id="search" name="search" oninput="handleSearch()">
+    </form>
+
+    <div class="card" id="ariete">
+        <img src="../immaginiOroscopo/ariete.png" alt="Foto 1A">
+        <div class="card-content">
+            <h2>Ariete</h2>
+            <p>ll segno dell’Ariete è rappresentato dalle corna di ariete che rivelano la sua volontà di affrontare la vita frontalmente.
+
+                Con il loro entusiasmo nell’affrontare le sfide della vita e la capacità di prosperare sotto pressione, si sentono felici quando hanno una sfida da affrontare.
+                
+                Essendo un segno di fuoco, è avventuroso, vivace e pionieristico con la determinazione di andare avanti in modo indipendente contro ogni previsione.
+                
+                Conosciuto per la sua grande sicurezza, l’Ariete tende ad avere un sacco di ottimismo all’inizio di qualcosa, ma ha difficoltà a portarlo fino alla fine.
+                
+                A volte possono oscillare dall’ottimismo all’incoscienza, ma tenendo gli occhi puntati sull’obiettivo può aiutare a scongiurare qualsiasi forma di autosabotaggio.</p>
+        </div>
+    </div>
+    <div class="card" id="toro">
+        <img src="../immaginiOroscopo/toro.png" alt="Foto 1A">
+        <div class="card-content">
+            <h2>Toro</h2>
+            <p>Il suo simbolo è una testa di toro con grandi corna sinuose.
+
+                Il segno rappresenta infatti la forza, la testardaggine, la tenacia, la virilità e il potere che sono inerenti al Toro.
+                
+                Secondo la simbologia dei segni zodiacali è uno dei segni più consapevoli con una vita interiore molto ricca e profonda.
+                
+                Lavoratori indefessi e costanti, oltre ad essere estremamente competitivi, non evitano mai una sfida.
+                
+                Non hanno bisogno dell’attenzione delle altre persone, delle cose stravaganti, ma piuttosto sentono il bisogno di essere sempre circondati dall’amore e dalla bellezza, essendo esseri calmi e pacifici.</p>
+        </div>
+    </div>
+    <div class="card" id="gemelli">
+        <img src="../immaginiOroscopo/gemelli.png" alt="Foto 1A">
+        <div class="card-content">
+            <h2>Gemelli</h2>
+            <p>Il simbolo dei Gemelli è costituito da due linee unite insieme.
+
+                Questi simboli rappresentano entrambi la dualità e la neutralità insite nei Gemelli.
+                
+                Sono socievoli, comunicativi e pronti al divertimento, e infatti hanno spesso la tendenza a diventare improvvisamente seri, premurosi e irrequieti.
+                
+                Il Gemelli è il segno più curioso ed è sempre alla ricerca di opportunità per imparare qualcosa di nuovo e coltivare nuovi hobby, poiché sentono che questo aiuta ad espandere la loro visione del mondo.</p>
+        </div>
+    </div>
+    <div class="card" id="cancro">
+        <img src="../immaginiOroscopo/cancro.png" alt="Foto 1A">
+        <div class="card-content">
+            <h2>Cancro</h2>
+            <p>Il cancro è rappresentato dal granchio che simboleggia la natura autoprotettiva del cancro.
+
+                Il simbolo del Cancro sembra un granchio, ma secondo alcuni rappresenta anticamente i seni e simboleggia le qualità nutritive inerenti al Cancro.
+                
+                I cancro sono esseri pratici ed empatici e quindi rispettosi dei propri desideri e dei desideri delle altre persone che sono in sintonia con il loro lato spirituale.
+                
+                Tendono a fare ogni cosa con un fondamento di gentilezza e si astengono dall’infliggere qualsiasi tipo di dolore a chiunque altro.
+                
+                Sono molto leali e capaci di entrare in empatia con il dolore e la sofferenza degli altri.</p>
+        </div>
+    </div>
+    <div class="card" id="leone">
+        <img src="../immaginiOroscopo/leone.png" alt="Foto 1A">
+        <div class="card-content">
+            <h2>Leone</h2>
+            <p>Nella simbologia dei segni zodiacali, il simbolo del Leone rappresenta la testa, la criniera e la coda del leone.
+
+                Il cerchio simboleggia invece il Sole luminoso e splendente e l’arco che vortica fuori dal cerchio rappresenta la presenza molto influente del Leone.
+                
+                I Leoni sono ottimisti e hanno una grande capacità di divertimento e intrattenimento. Inoltre, ricevere feedback, complimenti e gesti di gratitudine li fa sentire felici e contenti.
+                
+                Le persone nate sotto il segno del Leone sono inoltre considerati leader naturali.
+                
+                Sono teatrali, creativi, sicuri di sé, dominanti ed estremamente difficili da resistere, e in grado di ottenere tutto ciò che vogliono in qualsiasi area della vita in cui si impegnano.
+                
+                Tuttavia, quando si sentono minacciati, possono diventare freddi, gelosi e aggressivi.</p>
+        </div>
+    </div>
+    <div class="card" id="vergine">
+        <img src="../immaginiOroscopo/vergine.png" alt="Foto 1A">
+        <div class="card-content">
+            <h2>Vergine</h2>
+            <p>La Vergine è rappresentata da una fanciulla che porta del grano in braccio.
+
+                La fanciulla simboleggia il bisogno della Vergine di aiutare e servire, mentre il grano simboleggia la capacità della Vergine di separare le cose buone dagli scarti.
+                
+                Il suo simbolo, una “M” con una torsione verso l’interno, simboleggia l’introspezione e la modestia che appartengono alla Vergine.
+                
+                Non hanno troppi hobby e preferirebbero concentrarsi su alcune priorità specifiche piuttosto che su molte attività sparse e dedicarsi solo a un paio di cose in modo da poter diventare veramente bravi.
+                
+                Sono generalmente disponibili e amano fare il possibile per aiutare i loro cari e vicini.</p>
+        </div>
+    </div>
+    <div class="card" id="bilancia">
+        <img src="../immaginiOroscopo/bilancia.png" alt="Foto 1A">
+        <div class="card-content">
+            <h2>Bilancia</h2>
+            <p>La Bilancia è rappresentata da un oggetto inanimato che rivela il bisogno della Bilancia di giustizia, equilibrio, armonia e fair play.
+
+                Il simbolo della Bilancia rappresenta l’orizzonte con il Sole che sorge.
+                
+                I Bilancia sono le persone più rilassate e in cerca di pace che potrebbero stare lontano dalla scena ma richiedono serenità e armonia intorno a loro.
+                
+                Sono un segno naturalmente ottimista e sono conosciuti come romantici affascinanti e adorabili.
+                
+                Questi individui sono affascinati dall’equilibrio e dalla simmetria, sono alla costante ricerca della giustizia e dell’uguaglianza.
+                
+                Realizzando attraverso la vita che l’unica cosa che dovrebbe essere veramente importante per se stessi è il loro mondo interiore.</p>
+        </div>
+    </div>
+    <div class="card" id="scorpione">
+        <img src="../immaginiOroscopo/scorpione.png" alt="Foto 1A">
+        <div class="card-content">
+            <h2>Scorpione</h2>
+            <p>Lo scorpione rappresenta la capacità di nascondersi nell’oscurità e osservare, ma restando pronto a infliggere punture dolorose se minacciato.
+
+                Il simbolo dello Scorpione è una M con una coda uncinata rivolta verso l’alto.
+                
+                Questo rappresenta la capacità di creazione e la distruzione insita nello Scorpione.
+                
+                Alcuni credono che il suo simbolo rappresenti gli organi sessuali femminili e maschili e la creazione di nuova vita.
+                
+                Ad ogni modo, gli scorpioni sono persone molto intraprendenti e hanno passione per tutte le cose della loro vita.
+                
+                Intuitivi, pieni di risorse e determinati, sono molto dediti al loro lavoro, con una buona capacità di intuizione.
+                
+                La loro passione, insieme al raro dono di una profonda comprensione, consente loro di stabilire connessioni profonde con gli altri e di provare un forte sentimento per le cose in cui credono.
+                
+                Pertanto, gli Scorpioni sono profondamente emotivi, misteriosi, appassionati, assertivi, determinati, e attenti.</p>
+        </div>
+    </div>
+    <div class="card" id="sagittario">
+        <img src="../immaginiOroscopo/sagittario.png" alt="Foto 1A">
+        <div class="card-content">
+            <h2>Sagittario</h2>
+            <p>Il Sagittario è rappresentato dal centauro che simboleggia la dualità e la natura paradossale del Sagittario.
+
+                Il simbolo del Sagittario è una freccia rivolta verso l’alto, che rappresenta l’abilità del Sagittario di prendere la mira precisa e di non mancare mai di centrare il bersaglio.
+                
+                È il segno più ottimista. Sono infatti caratterizzati dal loro bisogno di cercare costantemente cose nuove ed affrontare nuove avventure.
+                
+                Questo, a sua volta, li mantiene carichi e le loro menti felici. La loro mente aperta e la loro visione filosofica li motivano a vagare per il mondo alla ricerca del significato della vita.
+                
+                Le persone nate sotto questo segno sono estroverse, piene di entusiasmo e pronte al cambiamento.</p>
+        </div>
+    </div>
+    <div class="card" id="capricorno">
+        <img src="../immaginiOroscopo/capricorno.png" alt="Foto 1A">
+        <div class="card-content">
+            <h2>Capricorno</h2>
+            <p>Il Capricorno simboleggia la capacità di elevarsi al di sopra delle correnti sotterranee emotive acquose per scalare ripidi terreni montuosi.
+
+                I Capricorno sono piuttosto ambiziosi con sogni grandi ma realistici e faranno di tutto per essere in grado di completare i loro obiettivi.
+                
+                Sono molto organizzati e pragmatici, estremamente pazienti e coerenti con il loro lavoro.
+                
+                Concentrati e pieni di risorse, portano a termine il lavoro e si considerano autorevoli, e quindi, quando ottengono lo stesso rispetto dalle persone importanti della loro vita, si sentono felici e orgogliosi.
+                
+                Questi individui possiedono uno stato interiore di indipendenza che consente progressi significativi sia nella loro vita personale che professionale.
+                
+                Sono maestri dell’autocontrollo e hanno la capacità di aprire la strada, imparare dai propri errori e arrivare in cima esclusivamente sulla base della propria esperienza e competenza.</p>
+        </div>
+    </div>
+    <div class="card" id="acquario">
+        <img src="../immaginiOroscopo/acquario.png" alt="Foto 1A">
+        <div class="card-content">
+            <h2>Acquario</h2>
+            <p>L’Acquario è rappresentato dal portatore d’acqua con l’acqua che fuoriesce dalla sua brocca simboleggia il versare la conoscenza per soddisfare la sete dell’umanità.
+
+                Il suo simbolo è quindi costituito da due linee identiche a zig-zag che rappresentano fulmini che simboleggiano la mente rapida dell’Acquario e la prospettiva illimitata che vede oltre i limiti attuali.
+                
+                Gli Acquario vivono la vita con i propri mezzi e amano essere considerati diversi e unici rispetto alle persone che li circondano.
+                
+                Quindi, l’individualità li spinge a fare meglio e a restare più felici e motivati ​​nelle loro vite.
+                
+                Sono persone che si elevano al di sopra del mondo materiale e hanno un grande intelletto.</p>
+        </div>
+    </div>
+    <div class="card" id="pesci">
+        <img src="../immaginiOroscopo/pesci.png" alt="Foto 1A">
+        <div class="card-content">
+            <h2>Pesci</h2>
+            <p>Ultimo tra i segni zodiacali, la sua rappresenta due pesci legati insieme, che nuotano in direzioni opposte.
+
+                Questo simboleggia il bisogno dei Pesci di comunicare sia con il mondo materiale che quello etereo, e la volontà portare il paradiso sulla terra.
+                
+                Creativi e talentuosi, i Pesci sono emotivamente intelligenti, gentili, comprensivi ed empatici.
+                
+                I pesci sono generalmente persone ottimiste e hanno una comprensione intuitiva del ciclo di vita, formando incredibili relazioni emotive con gli altri umani sulla base del carattere e dei sensi che li guidano.</p>
+        </div>
+    </div>
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Riferimenti</h3>
+                        <ul>
+                            <li><a href="https://api.nasa.gov/">API Nasa</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Creatore</h3>
+                        <ul>
+                            <li><a href="#">Luca Villa</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>AstroWeb</h3>
+                        <p>Benvenuto nel nostro sito di astrologia, il luogo dove esplorare i misteri del cosmo e scoprire il tuo destino nelle stelle. Qui troverai un viaggio avvincente attraverso l'arte millenaria dell'astrologia, dove antiche tradizioni si fondono con la scienza moderna per offrirti una prospettiva unica sulla tua vita e il tuo futuro.</p>
+                    </div>
+                </div>
+                <p class="copyright">AstroWeb © 2023</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="content">
+    </div>
+
+
+    
+
+
+
+
+</body>
+</html>
